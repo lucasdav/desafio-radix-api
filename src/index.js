@@ -14,7 +14,7 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.log(err));
 
 const corsOptions = {
-    origin: 'http://localhost:3000', 
+    origin: ['http://localhost:3000', 'https://desafio-radix-front.vercel.app/'], 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], 
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
